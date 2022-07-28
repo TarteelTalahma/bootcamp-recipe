@@ -1,0 +1,38 @@
+#continar {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  height: 200px;
+}
+.foodCard {
+  background-color: #bdc3c7;
+  text-align: center;
+  align-content: center;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+img {
+  background-color: #bdc3c7;
+  box-shadow: 1px 1px 3px black;
+  width: 300px;
+}
+ul {
+  position: relative; /* added */
+  padding-left: 0;
+
+  list-style: none;
+  display: flex;
+  justify-content: space-around; /* added */
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+li {
+  background-color: white;
+  border-radius: 0.5em;
+  width: 40%;
+  flex: 0 0 0 0; /* added */
+}
+body {
+  background-color: antiquewhite;
+}

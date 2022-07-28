@@ -1,0 +1,21 @@
+#continar {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1px;
+  height: 200px;
+  width: 100px;
+}
+.foodCard {
+  background-color: #bdc3c7;
+  text-align: center;
+  align-content: center;
+  padding-right: 1px;
+  padding-left: 1px;
+  /* width: 100px; */
+}
+img {
+  background-color: #bdc3c7;
+  box-shadow: 1px 1px 3px black;
+  box-sizing: 30px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="/jquery/dist/jquery.js"></script>
+  <script src="/handlebars/dist/handlebars.js"></script>
+</head>
+<body>
+  <script id="template" type="text/x-handlebars-template">
+            {{#each recipess}}
+              <div class="foodCard">
+                <p id="name">{{title}}</p>
+                <a href="{{href}}">{{href}}</a>
+                <div>
+                  <img
+                    id="palyarImg"
+                    src="{{thumbnail}}"
+                 onclick="clickImg(this)" />
+                 
+                </div>
+                <ul class = "ingredient">
+                  {{#each ingredients}}
+                  <li class = "index">
+                    {{this}}
+                  </li>
+                  {{/each}}
+                </ul>
+    </div>
+          {{/each}}
+        </script>
+
+          <div>
+            <button onclick="loadRecipess()">Search</button>
+
+            <input type="text" id="inputText" />
+
+          </div>
+          <div id="continar"></div>
+
+        </body>
+        <script src="Renderer.js"></script>
+        <script src="main.js"></script>
+</body>
